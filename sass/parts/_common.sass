@@ -1,0 +1,176 @@
+$primary1: #457FD7
+$primary2: #F0624E
+$dark: #505050
+$grey: #F7F7F7
+
+@import 'fonts'
+@import 'grid'
+
+html
+    font-family: Roboto
+    color: $dark
+    font-size: 18px
+    line-height: 1.2
+
+.nav
+    background-color: $primary1
+    padding: 20px 0
+    .container
+        align-items: center
+    &__logo
+        height: 100%
+        flex: 0 0 25%
+        max-width: 25%
+        &-img
+            max-height: 70px
+    &__menu
+        display: flex
+        flex: 0 0 75%
+        max-width: 75%
+        box-sizing: border-box
+        justify-content: flex-end
+        align-items: center
+        // padding: 0 20px
+        &-list
+            padding: 0
+            margin: 0
+            list-style: none
+            display: flex
+            justify-content: center
+        &-link
+            margin: 0 20px
+            font-size: 21px
+            color: white
+            position: relative
+
+            &:after
+                position: absolute
+                left: 0
+                bottom: -2px
+                content: ''
+                background-color: $primary2
+                height: 3px
+                width: 0
+                transition: width 0.5s
+            &:hover:after
+                // height: 2px
+                width: 100%
+
+.footer
+    background-color: $dark
+    color: white
+    padding: 50px 0
+    // padding: 50px 15px
+    font-size: 21px
+    line-height: 1.7
+    &__logo
+        flex: 0 0 40%
+        &-img
+            max-height: 130px
+            max-width: 340px
+
+    &__menu
+        padding: 0
+        margin: 0
+        list-style: none
+        flex: 0 0 30%
+        &-link
+            color: white
+
+    &__masters
+        padding: 0
+        margin: 0
+        list-style: none
+        flex: 0 0 30%
+        &-link
+            color: white
+            position: relative
+            // text-decoration: underline
+            // border-bottom: 1px solid white
+            &:after
+                position: absolute
+                content: ''
+                width: 100%
+                height: 1px
+                background-color: white
+                left: 0
+                bottom: 3px
+    
+.section
+    padding: 85px 0 95px
+    &__title
+        font-size: 36px
+        margin-top: 0
+        margin-bottom: 1.2em
+
+@media (max-width: 1199px)
+    .nav
+        &__logo
+            flex: 0 0 20%
+            max-width: 20%
+            &-img
+                max-height: 55px
+        &__menu
+            flex: 0 0 80%
+            max-width: 80%
+            &-link
+                font-size: 20px
+                margin: 0 18px
+            
+@media (max-width: 991px)
+    .nav
+        &__logo
+            flex: 0 0 100%
+            max-width: 100%
+            margin-bottom: 15px
+            &-img
+                display: block
+                margin: auto
+        &__menu
+            flex: 0 0 100%
+            max-width: 100%
+            justify-content: center
+            padding: 0
+            &-list
+                width: 100%
+                justify-content: space-between
+            &-link
+                font-size: 18px
+                margin: 0 10px
+@media (max-width: 767px)
+    .nav
+        &__menu
+            &-link
+                font-size: 16px
+            // li:first-child &-link
+            //     margin-left: 0
+            // li:last-child &-link
+            //     margin-right: 0
+
+@media (max-width: 575px)
+    .nav
+        &__logo
+            flex: 0 0 50%
+            max-width: 50%
+            margin-bottom: 0
+        &__menu
+            max-width: 50%
+            flex: 0 0 50%
+            &-list
+                flex-direction: column
+            &-link
+                line-height: 1.5
+
+@media (max-width: 479px)
+    .nav
+        &__logo
+            flex: 0 0 100%
+            max-width: 100%
+            margin-bottom: 10px
+            &-img
+                max-height: 45px
+        &__menu
+            max-width: 100%
+            flex: 0 0 100%
+            text-align: center
+            
