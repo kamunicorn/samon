@@ -2,13 +2,13 @@
 @import 'parts/pages/main'
 
 .main
-    line-height: 1.5
+    line-height: 1.3
     .container
         // padding: 0 15px
     &__title
-        font-size: 36px
+        font-size: 2rem
     &__subtitle
-        font-size: 21px
+        font-size: 1.2rem
     &__slider
 
     .slider
@@ -17,6 +17,8 @@
             height: 540px
             display: flex
             align-items: center
+            background-position: center center
+            background-size: cover
         &__first
             background-image: url('/img/main-slider/main.jpg')
         &__cooperation
@@ -38,6 +40,8 @@
     background-color: $grey
     &__text:last-child
         margin-bottom: 0
+    &__payment-ps
+        font-size: 1rem
 
 .products
     &-wrap
@@ -70,14 +74,39 @@
         border: 1px solid #aaa
         border-radius: 5px
         background-size: contain
-        height: 200px
+        height: 220px
+        &:last-child
+            display: none
 
 .gallery
     background-color: $grey
     &__item
         background-size: cover
         height: 300px
+        &:last-child
+            display: none
     .products__card-link
         &:hover
             background-color: rgba(black, 0.35)
 
+@media (max-width: 991px)
+    .gallery__item
+        height: 200px
+
+@media (max-width: 768px)
+    .catalog, .gallery
+        &__item
+            max-width: 49%
+            flex: 0 0 50%
+            margin-bottom: 9px;
+            &:last-child
+                display: block
+
+@media (max-width: 768px)
+    .catalog, .gallery
+        &__item
+            max-width: 100%
+            flex: 0 0 100%
+            margin-bottom: 9px;
+            &:last-child
+                display: none
