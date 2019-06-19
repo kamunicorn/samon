@@ -37,7 +37,7 @@
     &__text:last-child
         margin-bottom: 0
     &__payment-ps
-        font-size: 0.9em
+        font-size: small
 
 .products
     &-wrap
@@ -85,8 +85,7 @@
 @media (max-width: 991px)
     .gallery__item
         height: 200px
-
-@media (max-width: 768px)
+@media (max-width: 767px)
     .catalog, .gallery
         &__item
             max-width: 49%
@@ -94,8 +93,7 @@
             margin-bottom: 9px;
             &:last-child
                 display: block
-
-@media (max-width: 768px)
+@media (max-width: 575px)
     .catalog, .gallery
         &__item
             max-width: 100%
@@ -103,3 +101,8 @@
             margin-bottom: 9px;
             &:last-child
                 display: none
+    .gallery__item
+        height: 250px
+@media (max-width: 479px)
+    .catalog__item
+        height: 190px

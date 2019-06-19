@@ -1,0 +1,40 @@
+@import 'parts/common'
+
+.catalog
+    &__subtitle
+        text-align: center
+        font-weight: 500
+        font-size: 1.2rem
+    .container
+        justify-content: space-between
+    &__item
+        height: 200px
+        width: 32%
+        margin-bottom: 2%
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center center
+        &-title
+            font-size: 1.2rem
+            background-color: rgba(black, 0.45)
+            transition: background-color 0.3s
+            color: white
+            height: 100%
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background-color: rgba(black, 0.3)
+    
+@media (max-width: 991px)
+    .catalog__item
+        // height: 200px
+        width: 49%
+@media (max-width: 767px)
+    .catalog__item
+        height: 170px
+@media (max-width: 479px)
+    .catalog__item
+        height: 200px
+        width: 100%
