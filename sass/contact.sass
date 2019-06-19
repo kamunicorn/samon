@@ -1,0 +1,41 @@
+@import 'parts/common'
+@import 'parts/pages/main'
+
+.contact
+    // padding: 95px 0 100px
+    .container
+        justify-content: space-between
+    &__info
+        flex: 0 0 50%
+        max-width: 50%
+        padding-right: 100px
+        box-sizing: border-box
+        p:first-child
+            margin-top: 0
+        p:last-child
+            margin-bottom: 30px
+        a
+            color: inherit
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+    &__map
+        width: 500px
+@media (max-width: 1199px)
+    .contact
+        &__info
+            padding-right: 50px
+        &__map
+            flex: 0 0 50%
+            max-width: 50%
+@media (max-width: 991px)
+    .contact
+        &__info
+            padding-right: 0
+        &__map, &__info
+            flex: 0 0 100%
+            max-width: 100%
+@media (max-width: 575px)
+    .contact__map
+        // height: 300px
+        // overflow: hidden

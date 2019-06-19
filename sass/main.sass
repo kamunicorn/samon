@@ -3,8 +3,6 @@
 
 .main
     line-height: 1.3
-    .container
-        // padding: 0 15px
     &__title
         font-size: 2rem
     &__subtitle
@@ -13,21 +11,20 @@
 
     .slider
         color: white
+        &__first
+            background: $dark url('/img/main-slider/main.jpg')
+        &__cooperation
+            background: $dark url('/img/main-slider/cooperation.jpg')
+        &__payment
+            background: $dark url('/img/main-slider/payment-plan.jpg')
         &__item
             height: 540px
             display: flex
             align-items: center
             background-position: center center
             background-size: cover
-        &__first
-            background-image: url('/img/main-slider/main.jpg')
-        &__cooperation
-            background-image: url('/img/main-slider/cooperation.jpg')
+        &__cooperation, &__payment
             display: none
-        &__payment
-            background-image: url('/img/main-slider/payment-plan.jpg')
-            display: none
-        
         &__dots
 
         &__dots-item
@@ -41,7 +38,7 @@
     &__text:last-child
         margin-bottom: 0
     &__payment-ps
-        font-size: 1rem
+        font-size: 0.9em
 
 .products
     &-wrap
