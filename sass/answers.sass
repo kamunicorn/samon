@@ -1,0 +1,65 @@
+@import 'parts/common'
+
+.answers
+    &__postscript
+        font-size: 1rem
+        font-weight: 500
+    &__group
+        padding: 15px 10px 15px 5px
+        position: relative
+        /* &:before
+            position: absolute
+            // content: url('/img/arrow.png')
+            content: ''
+            background: url('/img/arrow.png') top left no-repeat
+            background-size: contain
+            width: 35px
+            height: 25px
+            top: 15px
+            left: 5px
+            cursor: pointer
+            transition: 0.9s */
+        /* &.open
+            &:before
+            position: absolute
+            // content: url('/img/arrow.png')
+            content: ''
+            background: url('/img/arrow.png') top left no-repeat
+            background-size: contain
+            transform: rotate(90deg)
+            width: 25px
+            height: 35px */
+
+    &__title
+        font-size: 1.2rem
+        font-weight: bold
+        margin: 0
+        margin-bottom: 15px
+        padding-left: 40px
+        cursor: pointer
+        position: relative
+        &:before
+            position: absolute
+            content: url('/img/arrow.png')
+            // content: ''
+            // background: url('/img/arrow.png') top left no-repeat
+            // background-size: contain
+            width: 22px
+            height: 15px
+            top: 50%
+            left: 5px
+            cursor: pointer
+            transition: 0.9s
+            transform: rotate(0deg) translateY(-50%)
+        &.open
+            &:before
+                position: absolute
+                content: url('/img/arrow.png')
+                // content: ''
+                // background: url('/img/arrow.png') top left no-repeat
+                // background-size: contain
+                transform: rotate(90deg)
+    &__text
+        font-size: 1rem
+        margin: 0
+        margin-left: 40px
