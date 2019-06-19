@@ -2,33 +2,10 @@
 
 .answers
     &__postscript
-        font-size: 1rem
         font-weight: 500
     &__group
-        padding: 15px 10px 15px 5px
+        padding: 15px 0
         position: relative
-        /* &:before
-            position: absolute
-            // content: url('/img/arrow.png')
-            content: ''
-            background: url('/img/arrow.png') top left no-repeat
-            background-size: contain
-            width: 35px
-            height: 25px
-            top: 15px
-            left: 5px
-            cursor: pointer
-            transition: 0.9s */
-        /* &.open
-            &:before
-            position: absolute
-            // content: url('/img/arrow.png')
-            content: ''
-            background: url('/img/arrow.png') top left no-repeat
-            background-size: contain
-            transform: rotate(90deg)
-            width: 25px
-            height: 35px */
 
     &__title
         font-size: 1.2rem
@@ -40,26 +17,40 @@
         position: relative
         &:before
             position: absolute
-            content: url('/img/arrow.png')
-            // content: ''
-            // background: url('/img/arrow.png') top left no-repeat
-            // background-size: contain
+            content: ''
+            background: url('/img/arrow.png') center center no-repeat
+            background-size: contain
             width: 22px
-            height: 15px
-            top: 50%
+            height: 22px
+            top: 0
             left: 5px
             cursor: pointer
             transition: 0.9s
-            transform: rotate(0deg) translateY(-50%)
+            transform: rotate(0deg)
         &.open
             &:before
-                position: absolute
-                content: url('/img/arrow.png')
-                // content: ''
-                // background: url('/img/arrow.png') top left no-repeat
-                // background-size: contain
                 transform: rotate(90deg)
     &__text
-        font-size: 1rem
         margin: 0
         margin-left: 40px
+
+@media (max-width: 575px)
+    .answers
+        &__title
+            padding-left: 30px
+            &:before
+                width: 20px
+                height: 20px
+                left: 0
+        &__text
+            margin-left: 30px
+@media (max-width: 575px)
+    .answers
+        &__title
+            padding-left: 25px
+            &:before
+                width: 16px
+                height: 16px
+                left: 0
+        &__text
+            margin-left: 25px
