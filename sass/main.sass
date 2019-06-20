@@ -10,6 +10,7 @@
 
     .slider
         color: white
+        position: relative
         &__first
             background: $dark url('/img/main-slider/main.jpg')
         &__cooperation
@@ -18,15 +19,42 @@
             background: $dark url('/img/main-slider/payment-plan.jpg')
         &__item
             height: 540px
-            display: flex
             align-items: center
             background-position: center center
             background-size: cover
-        &__cooperation, &__payment
             display: none
+            animation-name: fade
+            animation-duration: 0.9s
+            &.active
+                display: flex
         &__dots
-
-        &__dots-item
+            display: flex
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 30px
+            &-item
+                width: 12px
+                height: 12px
+                margin: 0 6px
+                box-sizing: border-box
+                border: 1.3px solid #fff
+                background-color: $dark
+                border-radius: 50%
+                cursor: pointer
+                &.active
+                    background-color: #fff
+                    border-color: $dark
+@-webkit-keyframes fade
+    from
+        opacity: 0.7
+    to
+        opacity: 1
+@keyframes fade
+    from
+        opacity: 0.7
+    to
+        opacity: 1
 
 .about
     &__text
