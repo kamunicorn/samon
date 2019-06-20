@@ -6,11 +6,12 @@
     &__subtitle
         margin-top: 0
     .row
-        justify-content: space-between
+        justify-content: center
 .product
     box-sizing: border-box
-    width: 32%
-    margin-bottom: 1.5%
+    width: 30%
+    margin: 1%
+    // margin-bottom: 1.5%
     cursor: pointer
     display: flex
     flex-direction: column
@@ -34,6 +35,10 @@
         object-fit: contain
         max-width: 85%
         margin: auto
+    &__name
+        display: block
+        font-weight: 700
+        margin-bottom: -5px
     &__desc
         padding: 0 15px 25px 22px
         font-size: 0.9rem
@@ -47,7 +52,7 @@
 
 @media (max-width: 767px)
     .product
-        width: 49.3%
+        width: 48%
 @media (max-width: 575px)
     .product
         &__desc

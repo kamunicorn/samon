@@ -1,7 +1,8 @@
 <?php
 $all_products = [
     'trotuar' => [
-        [
+        'title' => 'Тротуарная плитка',
+        'products' => [[
             'name' => 'Тротуарная плитка «Бабочка»',
             'dim' => '450х210х40 мм',
             'in_square_meter' => 13.5,
@@ -13,7 +14,7 @@ $all_products = [
             'in_square_meter' => 12.11,
             'cost' => 160,
             'image' => 'volna.jpg'
-        ],
+        ]],
     ]
 ];
 if ($_GET['name'] !== 'trotuar') {
@@ -21,13 +22,13 @@ if ($_GET['name'] !== 'trotuar') {
 }
 
 $category = $_GET['name'];
-$products_of_category = $all_products[$category];
+$products_of_category = $all_products[$category]['products'];
 ?>
 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <?php $title = 'Название категории'; ?>
+    <?php $title = $all_products[$category]['title']; ?>
     <?php include 'blocks/head.php'; ?>
 
     <link rel="stylesheet" href="css/category.min.css?v=1" />
@@ -43,6 +44,14 @@ $products_of_category = $all_products[$category];
             <div class="row">
                 <?php
                 foreach ($products_of_category as $product) { ?>
+                    <div class="category__item product">
+                        <img src="img/products/<?= $product['image']?>" alt="<?= $product['name']?>" class="product__img">
+                        <p class="product__desc"><span class="product__name"><?= $product['name']?></span>
+                            <br>Размер <?= $product['dim']?>
+                            <br>Количество в м<sup>2</sup> – <?= $product['in_square_meter']?>
+                            <br>Цена розничная – <?= $product['cost']?>
+                        </p>
+                    </div>
                     <div class="category__item product">
                         <img src="img/products/<?= $product['image']?>" alt="<?= $product['name']?>" class="product__img">
                         <p class="product__desc"><span class="product__name"><?= $product['name']?></span>

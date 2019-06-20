@@ -9,8 +9,8 @@
                     <li><a href="/contact.php" class="footer__menu-link">Контакты</a></li>
                 </ul>
                 <ul class="footer__masters">
-                    <li><a href="" class="footer__masters-link">Дизайн сайта</a></li>
-                    <li><a href="" class="footer__masters-link">Разработка сайта</a></li>
+                    <li><a href="//vk.com/webdesignby" class="footer__masters-link">Дизайн сайта</a></li>
+                    <li><a href="//kamunicorn.ru" class="footer__masters-link">Разработка сайта</a></li>
                 </ul>
             </div>
 
