@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Контакты | САМОН</title>
+    <?php $title = 'Контакты'; ?>
+    <?php include 'blocks/head.php'; ?>
 
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css?v=1" /> -->
     <link rel="stylesheet" href="css/contact.min.css?v=1" />
 </head>
 <body>
+
+<?php include 'blocks/nav.php'; ?>
+
     <section class="contact section">
         <h3 class="section__title section__title_center">Контакты</h3>
         <div class="container row">
@@ -26,8 +26,9 @@
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abfe4f3e63cd14d474590447834899d2f9c7cc4a83cbdfe3ebc3251cac460afa1&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
-
     </section>
-    
+
+<?php include 'blocks/footer.php'; ?>
+
 </body>
 </html>

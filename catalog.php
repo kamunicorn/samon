@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Каталог | САМОН</title>
+    <?php $title = 'Каталог'; ?>
+    <?php include 'blocks/head.php'; ?>
+
     <link rel="stylesheet" href="css/catalog.min.css?v=1" />
 </head>
 <body>
+
+<?php include 'blocks/nav.php'; ?>
+
     <section class="catalog section">
         <h3 class="section__title">Каталог</h3>
         <p class="catalog__subtitle">Выберите нужный тип продукта</p>
@@ -20,5 +22,8 @@
             <div class="catalog__item" style="background-image:url(img/catalog/catalog-6.jpg)"><a href="/category.html" class="catalog__item-title">Название продукции</a></div>
         </div>
     </section>
+
+<?php include 'blocks/footer.php'; ?>
+
 </body>
 </html>

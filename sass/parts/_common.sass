@@ -66,7 +66,6 @@ a
             font-size: 21px
             color: white
             position: relative
-
             &:after
                 position: absolute
                 left: 0
@@ -76,8 +75,9 @@ a
                 height: 3px
                 width: 0
                 transition: width 0.5s
+            &.active:after
+                width: 100%
             &:hover:after
-                // height: 2px
                 width: 100%
 
 .footer

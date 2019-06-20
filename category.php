@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Название категории | САМОН</title>
+    <?php $title = 'Название категории'; ?>
+    <?php include 'blocks/head.php'; ?>
+
     <link rel="stylesheet" href="css/category.min.css?v=1" />
 </head>
 <body>
+
+<?php include 'blocks/nav.php'; ?>
+
     <section class="category section">
         <h3 class="section__title">Каталог</h3>
         <div class="container">
@@ -54,5 +56,8 @@
         </div>
         
     </section>
+
+<?php include 'blocks/footer.php'; ?>
+
 </body>
 </html>

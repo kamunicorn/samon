@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Вопросы и ответы | САМОН</title>
+    <?php $title = 'Вопросы и ответы'; ?>
+    <?php include 'blocks/head.php'; ?>
 
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css?v=1" /> -->
     <link rel="stylesheet" href="css/answers.min.css?v=1" />
 </head>
 <body>
+
+<?php include 'blocks/nav.php'; ?>
+
     <section class="answers section">
         <h3 class="section__title section__title_center">Вопросы и ответы</h3>
         <div class="container">
@@ -27,6 +27,8 @@
         </div>
     </section>
 
-    <script src="js/answers.js"></script>
+<?php include 'blocks/footer.php'; ?>
+
+    <script src="js/answers.js?v=1"></script>
 </body>
 </html>
