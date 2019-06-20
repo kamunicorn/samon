@@ -1,3 +1,29 @@
+<?php
+$all_products = [
+    'trotuar' => [
+        [
+            'name' => 'Тротуарная плитка «Бабочка»',
+            'dim' => '450х210х40 мм',
+            'in_square_meter' => 13.5,
+            'cost' => 160,
+            'image' => 'babochka.jpg'
+        ], [
+            'name' => 'Тротуарная плитка «Волна»',
+            'dim' => '300х300х30 мм',
+            'in_square_meter' => 12.11,
+            'cost' => 160,
+            'image' => 'volna.jpg'
+        ],
+    ]
+];
+if ($_GET['name'] !== 'trotuar') {
+    header('Location: 404.php');
+}
+
+$category = $_GET['name'];
+$products_of_category = $all_products[$category];
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -15,46 +41,20 @@
         <div class="container">
             <p class="category__subtitle">Для организаций и юридических лиц действует специальная цена</p>
             <div class="row">
-                <div class="category__item product">
-                    <img src="img/products/product-1.jpg" alt="" class="product__img">
-                    <div class="product__desc">Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Fuga, pariatur?</div>
-                </div>
-                <div class="category__item product">
-                    <img src="img/products/product-2.jpg" alt="" class="product__img">
-                    <div class="product__desc">Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Fuga, pariatur?</div>
-                </div>
-                <div class="category__item product">
-                    <img src="img/products/product-3.jpg" alt="" class="product__img">
-                    <div class="product__desc">Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Fuga, pariatur?</div>
-                </div>
-                <div class="category__item product">
-                    <img src="img/products/product-4.jpg" alt="" class="product__img">
-                    <div class="product__desc">Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Fuga, pariatur?</div>
-                </div>
-                <div class="category__item product">
-                    <img src="img/products/product-5.jpg" alt="" class="product__img">
-                    <div class="product__desc">Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Fuga, pariatur?</div>
-                </div>
-                <div class="category__item product">
-                    <img src="img/products/product-6.jpg" alt="" class="product__img">
-                    <div class="product__desc">Lorem ipsum dolor sit amet 
-                        consectetur adipisicing elit. 
-                        Fuga, pariatur?</div>
-                </div>
+                <?php
+                foreach ($products_of_category as $product) { ?>
+                    <div class="category__item product">
+                        <img src="img/products/<?= $product['image']?>" alt="<?= $product['name']?>" class="product__img">
+                        <p class="product__desc"><span class="product__name"><?= $product['name']?></span>
+                            <br>Размер <?= $product['dim']?>
+                            <br>Количество в м<sup>2</sup> – <?= $product['in_square_meter']?>
+                            <br>Цена розничная – <?= $product['cost']?>
+                        </p>
+                    </div>
+                <? } ?>
+
             </div>
-            
         </div>
-        
     </section>
 
 <?php include 'blocks/footer.php'; ?>
