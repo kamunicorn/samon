@@ -1,5 +1,4 @@
-<?php
-$all_products = [
+<?php $all_products = [
     'trotuar' => [
         'title' => 'Тротуарная плитка',
         'products' => [[
@@ -15,10 +14,27 @@ $all_products = [
             'cost' => 160,
             'image' => 'volna.jpg'
         ]],
+    ],
+    'flower' => [
+        'title' => 'Цветники',
+        'products' => [[
+            'name' => 'Цветники «Бабочка»',
+            'dim' => '450х210х40 мм',
+            'in_square_meter' => 13.5,
+            'cost' => 160,
+            'image' => 'babochka.jpg'
+        ], [
+            'name' => 'Цветники «Волна»',
+            'dim' => '300х300х30 мм',
+            'in_square_meter' => 12.11,
+            'cost' => 160,
+            'image' => 'volna.jpg'
+        ]],
     ]
 ];
-if ($_GET['name'] !== 'trotuar') {
+if (!array_key_exists($_GET['name'], $all_products)) {
     header('Location: 404.php');
+    die();
 }
 
 $category = $_GET['name'];
@@ -38,8 +54,8 @@ $products_of_category = $all_products[$category]['products'];
 <?php include 'blocks/nav.php'; ?>
 
     <section class="category section">
-        <h3 class="section__title">Каталог</h3>
         <div class="container">
+            <h3 class="section__title"><?=$title?></h3>
             <p class="category__subtitle">Для организаций и юридических лиц действует специальная цена</p>
             <div class="row">
                 <?php

@@ -6,7 +6,7 @@
                 </div>
                 <div class="nav__menu">
                     <ul class="nav__menu-list">
-                        <li><a href="/" class="nav__menu-link active">Главная</a></li>
+                        <li><a href="/" class="nav__menu-link">Главная</a></li>
                         <li><a href="/catalog.php" class="nav__menu-link">Каталог</a></li>
                         <li><a href="/answers.php" class="nav__menu-link">Вопросы и ответы</a></li>
                         <li><a href="/gallery.php" class="nav__menu-link">Фотогалерея</a></li>

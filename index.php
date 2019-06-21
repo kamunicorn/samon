@@ -64,10 +64,10 @@
         <div class="container">
             <h3 class="section__title">Каталог</h3>
             <div class="products-wrap">
-                <div class="catalog__item products__card" style="background-image: url('/img/products/product-1.jpg')"><a class="products__card-link" href="/category.php"></a></div>
-                <div class="catalog__item products__card" style="background-image: url('/img/products/product-2.jpg')"><a class="products__card-link" href="/category.php"></a></div>
-                <div class="catalog__item products__card" style="background-image: url('/img/products/product-3.jpg')"><a class="products__card-link" href="/category.php"></a></div>
-                <div class="catalog__item products__card" style="background-image: url('/img/products/product-4.jpg')"><a class="products__card-link" href="/category.php"></a></div>
+                <div class="catalog__item products__card" style="background-image: url('/img/products/product-1.jpg')"><a class="products__card-link" href="/catalog.php"></a></div>
+                <div class="catalog__item products__card" style="background-image: url('/img/products/product-2.jpg')"><a class="products__card-link" href="/catalog.php"></a></div>
+                <div class="catalog__item products__card" style="background-image: url('/img/products/product-3.jpg')"><a class="products__card-link" href="/catalog.php"></a></div>
+                <div class="catalog__item products__card" style="background-image: url('/img/products/product-4.jpg')"><a class="products__card-link" href="/catalog.php"></a></div>
             </div>
             <p><a class="products__look-all" href="/catalog.php">Смотреть весь каталог</a></p>
         </div>
