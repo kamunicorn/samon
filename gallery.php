@@ -23,5 +23,13 @@
     
 <?php include 'blocks/footer.php'; ?>
 
+<div class="gallery-slider slider">
+    <div class="slider__buttons prev"></div>
+    <img src="img/gallery/photo-1.jpg" alt="" class="slider__img">
+    <div class="slider__buttons next"></div>
+</div>
+
+<script src="js/gallery.js?v-1"></script>
+
 </body>
 </html>
