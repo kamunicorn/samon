@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
     <?php $title = 'Фотогалерея'; ?>
-    <?php include 'blocks/head.php'; ?>
+    <?php include 'php/head.php'; ?>
     <link rel="stylesheet" href="css/gallery.min.css?v=1" />
 </head>
 <body>
 
-<?php include 'blocks/nav.php'; ?>
+<?php include 'php/nav.php'; ?>
 
     <section class="gallery section">
         <h3 class="section__title">Фотогалерея</h3>
@@ -21,7 +21,7 @@
         </div>
     </section>
     
-<?php include 'blocks/footer.php'; ?>
+<?php include 'php/footer.php'; ?>
 
 <div class="gallery-slider slider">
     <div class="slider__close">&times;</div>

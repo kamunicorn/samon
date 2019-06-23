@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
     <?php $title = 'Вопросы и ответы'; ?>
-    <?php include 'blocks/head.php'; ?>
+    <?php include 'php/head.php'; ?>
 
     <link rel="stylesheet" href="css/answers.min.css?v=1" />
 </head>
 <body>
 
-<?php include 'blocks/nav.php'; ?>
+<?php include 'php/nav.php'; ?>
 
     <section class="answers section">
         <h3 class="section__title section__title_center">Вопросы и ответы</h3>
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-<?php include 'blocks/footer.php'; ?>
+<?php include 'php/footer.php'; ?>
 
     <script src="js/answers.js?v=1"></script>
 </body>

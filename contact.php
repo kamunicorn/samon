@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
     <?php $title = 'Контакты'; ?>
-    <?php include 'blocks/head.php'; ?>
+    <?php include 'php/head.php'; ?>
 
     <link rel="stylesheet" href="css/contact.min.css?v=1" />
 </head>
 <body>
 
-<?php include 'blocks/nav.php'; ?>
+<?php include 'php/nav.php'; ?>
 
     <section class="contact section">
         <h3 class="section__title section__title_center">Контакты</h3>
@@ -28,7 +28,7 @@
         </div>
     </section>
 
-<?php include 'blocks/footer.php'; ?>
+<?php include 'php/footer.php'; ?>
 
 </body>
 </html>

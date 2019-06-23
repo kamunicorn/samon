@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <?php include 'blocks/head.php'; ?>
+    <?php include 'php/head.php'; ?>
 
     <link rel="stylesheet" href="css/main.min.css?v=1" />
 </head>
 <body>
     
-<?php include 'blocks/nav.php'; ?>
+<?php include 'php/nav.php'; ?>
 
     <main class="main">
         <div class="main__slider slider">
@@ -93,7 +93,7 @@
         </div>
     </section>
 
-<?php include 'blocks/footer.php'; ?>
+<?php include 'php/footer.php'; ?>
 
     <script src="js/main.js?v=1"></script>
 </body>

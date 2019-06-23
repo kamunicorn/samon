@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(e.target);
         if (e.target.classList.contains('gallery__item')) {
             slider.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
             let oldContent = sliderContent.firstElementChild,
                 newContent = document.createElement('img');
             newContent.src = e.target.querySelector('img').getAttribute('src');
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.addEventListener('click', function(e){
         if (e.target == this || e.target == btnClose) {
             slider.style.display = 'none';
+            document.body.style.overflow = 'auto';
         }
     });
 });
