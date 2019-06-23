@@ -17,7 +17,7 @@ include 'php/catalog-info.php';
 
     <section class="catalog section">
         <h3 class="section__title">Каталог</h3>
-        <p class="catalog__subtitle">Выберите нужный тип продукта</p>
+        <p class="section__subtitle">Выберите нужный тип продукта</p>
         <div class="container row">
             <?php
             foreach ($categories as $code => $category) { ?>

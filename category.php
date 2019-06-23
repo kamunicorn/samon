@@ -25,7 +25,7 @@ $products_of_category = $products[$category];
     <section class="category section">
         <div class="container">
             <h3 class="section__title"><?=$title?></h3>
-            <p class="category__subtitle">Для организаций и юридических лиц действует специальная цена</p>
+            <p class="section__subtitle">Для организаций и юридических лиц действует специальная цена</p>
             <div class="row">
                 <?php
                 foreach ($products_of_category as $product) { ?>

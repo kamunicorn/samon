@@ -3,8 +3,8 @@
 .answers
     .section__title
         text-align: center
-    &__postscript
-        font-weight: 500
+    &__postscript a:hover
+        text-decoration: underline
     &__group
         padding: 10px 0
         position: relative
@@ -38,7 +38,7 @@
         overflow: hidden
         transition: height 0.7s
         &.open
-            height: 50px
+            // height: auto
 
 @media (max-width: 575px)
     .answers
