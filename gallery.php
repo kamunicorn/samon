@@ -24,12 +24,15 @@
 <?php include 'blocks/footer.php'; ?>
 
 <div class="gallery-slider slider">
+    <div class="slider__close">&times;</div>
     <div class="slider__buttons prev"></div>
-    <img src="img/gallery/photo-1.jpg" alt="" class="slider__img">
+    <div class="slider__content">
+        <img src="img/gallery/photo-1.jpg" alt="">
+    </div>
     <div class="slider__buttons next"></div>
 </div>
 
-<script src="js/gallery.js?v-1"></script>
+<script src="js/gallery.js?v=1"></script>
 
 </body>
 </html>
