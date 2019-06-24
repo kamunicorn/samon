@@ -3,17 +3,19 @@
 .catalog
     .section__title
         text-align: center
-    .container
-        justify-content: space-between
+    .row
+        justify-content: center
     &__item
-        height: 200px
-        width: 32%
-        margin-bottom: 2%
+        height: 220px
+        width: 420px
+        margin: 0.7%
         background-repeat: no-repeat
         background-size: contain
         background-position: center center
         text-align: center
         &-title
+            padding: 0 15px
+            box-sizing: border-box
             font-size: 1.2rem
             background-color: rgba(black, 0.45)
             transition: background-color 0.3s
@@ -29,7 +31,7 @@
 @media (max-width: 991px)
     .catalog__item
         // height: 200px
-        width: 49%
+        width: 48%
 @media (max-width: 767px)
     .catalog__item
         height: 170px

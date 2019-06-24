@@ -3,7 +3,7 @@
 <head>
     <?php $title = 'Фотогалерея'; ?>
     <?php include 'php/head.php'; ?>
-    <link rel="stylesheet" href="css/gallery.min.css?v=1" />
+    <link rel="stylesheet" href="css/gallery.min.css?v=2" />
 </head>
 <body>
 
@@ -26,7 +26,6 @@
     <div class="slider__close">&times;</div>
     <div class="slider__buttons prev"></div>
     <div class="slider__content">
-        <img src="img/gallery/photo-1.jpg" alt="">
     </div>
     <div class="slider__buttons next"></div>
 </div>

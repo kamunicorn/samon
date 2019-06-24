@@ -9,7 +9,7 @@ include 'php/catalog-info.php';
     <?php $title = 'Каталог'; ?>
     <?php include 'php/head.php'; ?>
 
-    <link rel="stylesheet" href="css/catalog.min.css?v=1" />
+    <link rel="stylesheet" href="css/catalog.min.css?v=2" />
 </head>
 <body>
 

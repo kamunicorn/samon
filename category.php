@@ -16,7 +16,7 @@ $products_of_category = $products[$category];
     <?php $title = $categories[$category]['name']; ?>
     <?php include 'php/head.php'; ?>
 
-    <link rel="stylesheet" href="css/category.min.css?v=1" />
+    <link rel="stylesheet" href="css/category.min.css?v=2" />
 </head>
 <body>
 
@@ -25,16 +25,23 @@ $products_of_category = $products[$category];
     <section class="category section">
         <div class="container">
             <h3 class="section__title"><?=$title?></h3>
-            <p class="section__subtitle">Для организаций и юридических лиц действует специальная цена</p>
+            <p class="section__subtitle">Для оптовых покупателей и юридических лиц действует специальная цена</p>
             <div class="row">
                 <?php
                 foreach ($products_of_category as $product) { ?>
                     <div class="category__item product">
                         <img src="img/products/<?= $product['image']?>" alt="<?= $product['name']?>" class="product__img">
                         <p class="product__desc"><span class="product__name"><?= $product['name']?></span>
-                            <br>Размер <?= $product['dim']?>
+
+                            <? if ($product['dim']) { ?>
+                            <br>Размер – <?= $product['dim']; }?>
+
                             <? if ($product['in_m2']) { ?>
                             <br>Количество в м<sup>2</sup> – <?= $product['in_m2']?> шт.<?}?>
+                            
+                            <? if ($product['complect']) { ?>
+                            <br><?= $product['complect']; }?>
+
                             <br>Цена розничная – <?= $product['cost']?> руб.
                         </p>
                     </div>
