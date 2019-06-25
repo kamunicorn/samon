@@ -16,7 +16,7 @@ $products_of_category = $products[$category];
     <?php $title = $categories[$category]['name']; ?>
     <?php include 'php/head.php'; ?>
 
-    <link rel="stylesheet" href="css/category.min.css?v=2" />
+    <link rel="stylesheet" href="css/category.min.css?v=3" />
 </head>
 <body>
 
