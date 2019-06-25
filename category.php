@@ -34,7 +34,7 @@ $products_of_category = $products[$category];
                         <p class="product__desc"><span class="product__name"><?= $product['name']?></span>
 
                             <? if ($product['dim']) { ?>
-                            <br>Размер – <?= $product['dim']; }?>
+                            Размер – <?= $product['dim']; }?>
 
                             <? if ($product['in_m2']) { ?>
                             <br>Количество в м<sup>2</sup> – <?= $product['in_m2']?> шт.<?}?>
@@ -42,7 +42,8 @@ $products_of_category = $products[$category];
                             <? if ($product['complect']) { ?>
                             <br><?= $product['complect']; }?>
 
-                            <br>Цена розничная – <?= $product['cost']?> руб.
+                            <? if ($product['cost']) { ?>
+                            <br>Цена розничная – <?= $product['cost']?> руб.<?}?>
                         </p>
                     </div>
                 <? } ?>
