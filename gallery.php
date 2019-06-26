@@ -14,7 +14,7 @@
         <div class="container row">
         <?php for ($i = 1; $i <= 30; $i++) { 
             if (file_exists("img/gallery/самон-фото-$i.jpg")) { ?>
-            <div class="gallery__item"><img src="img/gallery/самон-фото-<?=$i?>.jpg" alt="" class="gallery__img"></div>
+            <div class="gallery__item gallery__item"><img src="img/gallery/самон-фото-<?=$i?>.jpg" alt="" class="gallery__img"></div>
         <? }} ?>
             <div class="gallery__item gallery__item-video"><img src="img/gallery/самон-видео-великан.jpg" alt="" class="gallery__img"></div>
             <div class="gallery__item"><img src="img/gallery/самон-следы-великана.jpg" alt="" class="gallery__img"></div>
@@ -31,7 +31,7 @@
     <div class="slider__buttons next"></div>
 </div>
 
-<script src="js/gallery.js?v=1"></script>
+<script src="js/gallery.js?v=2"></script>
 
 </body>
 </html>

@@ -9,13 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
         index = 0;
     
     galleryBox.addEventListener('click', function(e) {
-        console.log(e.target);
         if (e.target.classList.contains('gallery__item')) {
             slider.style.display = 'flex';
             document.body.style.overflow = 'hidden';
             index = Array.prototype.indexOf.call(galleryItems, e.target);
             changeSlide(index);
-            console.log(index);
         }
     });
 
@@ -30,10 +28,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function changeSlide(index) {
-        let newContent = document.createElement('img');
-        newContent.src = galleryItems[index].querySelector('img').getAttribute('src');
-        sliderContent.textContent = '';
-        sliderContent.appendChild(newContent);
+        let newContent;
+        if (galleryItems[index].classList.contains('gallery__item-video')) {
+            sliderContent.innerHTML = '<video width="50%" height="auto" controls poster="img/video-preview.jpg" src="velikan.mp4"></video>';
+        } else {
+            newContent = document.createElement('img');
+            newContent.src = galleryItems[index].querySelector('img').getAttribute('src');
+            sliderContent.textContent = '';
+            sliderContent.appendChild(newContent);
+        }
     }
 
     slider.addEventListener('click', function(e){
