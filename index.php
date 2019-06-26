@@ -3,7 +3,7 @@
 <head>
     <?php include 'php/head.php'; ?>
 
-    <link rel="stylesheet" href="css/main.min.css?v=2" />
+    <link rel="stylesheet" href="css/main.min.css?v=3" />
 </head>
 <body>
     
@@ -88,6 +88,7 @@
         <div class="container">
             <h3 class="section__title">Сертификаты</h3>
             <p class="sertificates__text">Качество нашей продукции подтверждено экспертизой Камчатского технического центра диагностики инженерных сооружений и системой добровольной сертификации.</p>
+            <a href="img/сертификат.jpg" class="sertificates__item" target="_blank" title="Открыть сертификат"><img src="img/сертификат.jpg" alt="Сертификат соответствия"></a>
         </div>
     </section>
 
