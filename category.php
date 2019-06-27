@@ -43,12 +43,17 @@ $products_of_category = $products[$category];
                             <br><?= $product['complect']; }?>
 
                             <? if ($product['cost']) { ?>
-                            <br>Цена розничная – <?= $product['cost']?> руб.<?}?>
+                            <br>Цена – <?= $product['cost']?> руб. <?
+                                ($product['cost_m2']) 
+                                ? print 'за м<sup>2</sup>' 
+                                : print 'за шт.';
+                            } ?>
                         </p>
                     </div>
                 <? } ?>
 
             </div>
+            <p class="section__subtitle">Для оптовых покупателей и юридических лиц действует специальная цена</p>
         </div>
     </section>
 
