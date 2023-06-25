@@ -44,9 +44,7 @@ $products_of_category = $products[$category];
 
                             <? if ($product['cost']) { ?>
                             <br>Цена – <?= $product['cost']?> руб. <?
-                                ($product['cost_m2']) 
-                                ? print 'за м<sup>2</sup>' 
-                                : print 'за шт.';
+                                ($product['cost_m2']) ? print 'за м<sup>2</sup>' : print 'за шт.';
                             } ?>
                         </p>
                     </div>
